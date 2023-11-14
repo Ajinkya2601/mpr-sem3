@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NGOS & SHELTERS</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        :root{
+    font-size: 10px;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: beige;
+    color: #357738;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background-color:  #357738;
+}
+::-webkit-scrollbar-thumb {
+    width: 3px; 
+    height: 20px; 
+    border-radius: 5rem;
+}
+::-webkit-scrollbar {
+    border: 1px solid #ccc; 
+}
+nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+    height: fit-content;
+}
+.left{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 10px;
+}
+.mid{
+    padding-top: 10px;  
+}
+.midname{
+   color: black;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   font-size: 2rem;
+   flex-wrap: wrap;
+}
+.list1{
+    margin: 20px 1rem;
+}
+.right{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+#logo{
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    mix-blend-mode: darken;
+}
+#name{
+    margin-top: 20px;
+    width: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn1{
+    font-size: 2.2rem; 
+    padding: 10px; 
+    border-start-start-radius:25% ;
+    border-end-end-radius: 25%;
+    background: local;
+    margin-right: 40px;
+} 
+a,button{
+    cursor: pointer;
+    color: rgb(12, 3, 27);
+    text-decoration: none; 
+} 
+        #map {
+            height: 800px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="left">
+                 <img id="logo" src="jeevan.jpg">
+                 <h2 id="name">JEEVAN</h2>
+            </div>
+            <div class="mid">
+            <ul class="midname">
+                <a class="list1" href="home.html">Home</a>          
+                <a class="list1" href="adopt.html">Adopt</a>
+                <a class="list1" href="rescue.html">Rescue</a>
+                <a class="list1" href="volunteer.html">Volunteer</a>
+                <a class="list1" href="map.html">NGOs & Shelter</a>
+                <a class="list1" href="support.html">Support us</a> 
+            </ul>
+            </div>
+            <div class="right">
+                <a href="loginpage.html"><button class="btn1">Login</button></a>
+                <div class="menu">
+                    <a href="#"><i id="ham" class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav> 
+    <div id="map"></div>
+
+    <script>
+        var map = L.map('map').setView([19.0760, 72.8777], 11);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Adding markers to the map
+        var marker1 = L.marker([19.12472, 72.82528]).addTo(map); // 2
+        var marker2 = L.marker([19.19778, 72.87223]).addTo(map); // 1
+        var marker3 = L.marker([19.25917, 72.98333]).addTo(map);
+        var marker4 = L.marker([19.03056, 72.89472]).addTo(map);
+        var marker5 = L.marker([19.12417, 72.91278]).addTo(map);
+        var marker6 = L.marker([19.13167, 72.815]).addTo(map);
+        var marker7 = L.marker([19.17222, 72.94222]).addTo(map); //  RAWW
+        var marker8 = L.marker([19.1253, 72.8661]).addTo(map);
+        var marker9 = L.marker([18.947, 72.7944]).addTo(map);
+        var marker10 = L.marker([19.1564, 72.9361]).addTo(map);
+
+        // You can add popups to the markers
+        marker1.bindPopup("<b>World For All Animal Care & Adoptions </b><br>Address: 10, Takshila, Hanuman Nagar, Four Bungalows, Andheri West, Mumbai, Maharashtra 400053").openPopup();
+        marker2.bindPopup("<b>Animals Matter To Me (AMTM)</b><br>Address: C-9, Whispering Palms Shopping Centre, Akurli Road, Lokhandwala Township, Kandivali East, Mumbai, Maharashtra 400101").openPopup();
+        marker3.bindPopup("<b>The Welfare of Stray Dogs (WSD) </b><br>Address: 35C, Hiranandani Estate, Ghodbunder Road, Thane West, Thane, Maharashtra 400607").openPopup();
+        marker4.bindPopup("<b>Karuna Animal Welfare Association of Maharashtra</b><br>Address: Shree Tuljabhavani Sankul, Ground Floor, Behind Inlaks Hospital, Chembur, Mumbai, Maharashtra 400071").openPopup();
+        marker5.bindPopup("<b>Save Our Strays (SOS)</b><br>Address: 207, Powai Plaza, Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076").openPopup();
+        marker6.bindPopup("<b>The Cat Café Studio</b><br>Address: Bungalow No. 63, Harminder Singh Road, Aram Nagar, Part 1, Versova, Andheri West, Mumbai, Maharashtra 400061").openPopup();
+        marker7.bindPopup("<b>RAWW (Resqink Association for Wildlife Welfare)</b><br>Address: P&T Staff Colony, Mulund West, Mumbai, Maharashtra").openPopup();
+        marker8.bindPopup("<b>Just Be Friendly (JBF)</b><br>Address: A-1, Evergreen Estate, Shakti Nagar, Mahakali Caves Road, Andheri East, Mumbai, Maharashtra 400093").openPopup();
+        marker9.bindPopup("<b>The Welfare Of Stray Dogs (WSD)</b><br>Address: C/o Animal Hospital, Malabar Hill, Near Smith Flyover, Near Teen Batti, Mumbai, Maharashtra 400006").openPopup();
+        marker10.bindPopup("<b>Plant and Animal Welfare Society (PAWS)</b><br>Address: PAWS Wagle Estate Animal Shelter, Ashar Estate, Kolshet Road, Wagle Estate, Thane West, Maharashtra 400604").openPopup();
+    </script>
+</body>
+</html>

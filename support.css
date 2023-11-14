@@ -1,0 +1,365 @@
+:root{
+    font-size: 10px;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: beige;
+    color: #357738;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background-color:  #357738;
+}
+::-webkit-scrollbar-thumb {
+    width: 3px; 
+    height: 20px; 
+    border-radius: 5rem;
+}
+::-webkit-scrollbar {
+    border: 1px solid #ccc; 
+}
+nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+    height: fit-content;
+}
+.left{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 10px;
+}
+.mid{
+    padding-top: 10px;  
+}
+.midname{
+   color: black;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   font-size: 2rem;
+   flex-wrap: wrap;
+}
+.list1{
+    margin: 20px 1rem;
+}
+.right{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+#logo{
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    mix-blend-mode: darken;
+}
+#name{
+    margin-top: 20px;
+    width: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn1{
+    font-size: 2.2rem; 
+    padding: 10px; 
+    border-start-start-radius:25% ;
+    border-end-end-radius: 25%;
+    background: local;
+    margin-right: 40px;
+} 
+a,button{
+    cursor: pointer;
+    color: rgb(12, 3, 27);
+    text-decoration: none; 
+} 
+h1{
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(0, 34, 108);
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#donation,#merchandise{
+    color: white;
+    background-color: #357738;
+    padding: 8px 24px;
+    font-size: 3.2rem;
+    border: none;
+    border-radius: 10px;
+}
+.option{
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+#donate{
+    display: none;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 25px;
+}
+#donation-img{
+    width : 28vw;
+    height: 28vw;
+}
+.appeal{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    font-size: 3rem;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.container-forms {
+    margin-left: 40px;
+    width: 50%;
+    margin-top: 40px;
+    background-color: rgb(242, 242, 242);
+    height: fit-content;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+label {
+    display: inline-block;
+    padding: 12px 12px 12px 0px;
+    margin-bottom: 0.5rem;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+input[type="text"], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-radius: 4px;
+}
+button, input {
+    overflow: visible;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.merch{
+   margin-bottom: 100px;
+}
+input[type="submit"] {
+    margin-left: 20vw;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    cursor: pointer;
+    font-size: 2.4rem;
+    float: right;
+    padding: 12px 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+    margin-top: 10px;
+}  
+#buy{
+    display: none;
+    margin-bottom: 50px;
+} 
+.merch-box1,.merch-box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-bottom: 20px;
+}
+.merch-box1 > div[class^="merch-box1"],
+.merch-box2 > div[class^="merch-box2"]{
+    width: fit-content;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5rem;
+}
+.merch-img{
+    width: 30rem;
+    height: 33rem;
+    padding: 15px 15px;
+}
+.merch-inner-title1{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.merch-price{
+    display: flex;
+    gap: 4vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.merch-buy{
+    padding: 6px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2.2rem;
+    border-radius: 5rem;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 2.5rem;
+}
+.toy-box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-bottom: 20px;
+}
+.toy-box1 > div[class^="toy-box1"]{
+    width: fit-content;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5rem;
+}
+.toy-img{
+    width: 30rem;
+    height: 33rem;
+    padding: 15px 15px;
+}
+.toy-inner-title1{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.toy-price{
+    display: flex;
+    gap: 4vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.toy-buy{
+    padding: 6px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2.2rem;
+    border-radius: 5rem;
+    margin-bottom: 20px;
+}
+.end{
+    display: none;
+    flex-direction: column;
+    text-align: center; 
+    background-color: rgb(242, 239, 173);
+    color: rgb(1, 5, 8);
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom:1px solid black; 
+}
+.insta,.facebook,.twitter{
+    width: 4rem;
+    height:4rem;
+    padding-right: 1rem;
+    mix-blend-mode: darken;
+}
+.twitter{
+    width: 4.4rem;
+}
+.socialmed{
+    list-style:none;
+}
+p{
+    padding-top: 5px;
+}
+.endlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.list3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+.endinfo{
+    font-size: 3rem;
+    color:rgb(1, 1, 24);
+}
+.footerbtn{
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    background: local;
+    color: rgb(1, 1, 24);
+    margin-bottom: 0.5rem;
+}
+h5{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}

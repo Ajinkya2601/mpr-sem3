@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="support.css"> 
+    <title>DSUPPORT US</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="left">
+                 <img id="logo" src="jeevan.jpg">
+                 <h2 id="name">JEEVAN</h2>
+            </div>
+            <div class="mid">
+            <ul class="midname">
+               <a class="list1" href="home.html">Home</a>          
+               <a class="list1" href="adopt.html">Adopt</a>
+               <a class="list1" href="rescue.html">Rescue</a>
+               <a class="list1" href="volunteer.html">Volunteer</a>
+               <a class="list1" href="map.html">NGOs & Shelter</a>
+               <a class="list1" href="support.html">Support us</a> 
+            </ul>
+            </div>
+            <div class="right">
+                <a href="loginpage.html"><button class="btn1">Login</button></a>
+                <div class="menu">
+                    <a href="#"><i id="ham" class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav> 
+    <div class="option">
+        <h1>SUPPORT US</h1>
+        <div class="buttons">
+            <button id="donation">Donate</button>
+            <button id="merchandise">Buy Merch</button>
+        </div>
+    </div>
+    <hr>
+    <section id="donate">
+        <h1>Help Us By Donating</h1>
+        <div class="para">
+            <img id="donation-img" src="donation-img.jpg">
+            <div class="appeal">
+            <p>Animal welfare is not just a cause; it's a responsibility that we all share. The well-being of our furry, feathered, and finned friends is not only a moral imperative but also a reflection of our humanity. Animals cannot advocate for themselves, and that's where we step in. Your support can transform lives, providing safety, comfort, and hope for animals in need. Whether it's rescuing a neglected pet or preserving the habitat of endangered species, your contribution directly contributes to their survival.</p>
+            <p>By supporting animal welfare, you're actively participating in the preservation of our planet's rich biodiversity and promoting compassion for all living beings. Together, we can make a positive impact on our world, one paw, feather, or scale at a time. Join us in making a difference today.</p>
+            </div>
+        </div>
+    <div class="form">
+        <div class="container-forms">
+            <h1>Donate money</h1>
+            <form action="/donation" method="POST" id="donationForm">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="donationName" name="name" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="donationEmail" name="email" placeholder="Email ID">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Payment type</label>
+                </div>
+                <div class="col-75">
+                  <select name="method">
+                    <option value="UPI">UPI</option>
+                    <option value="Card">Card</option>
+                    <option value="Net Banking">Net Banking</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Amount</label>
+                </div>
+                <div class="col-75">
+                  <input id="donationAmount" name="amount" placeholder="Enter amount" type="text">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+  </div>
+</section>
+<section id="buy">
+    <h1>Buy Our Merchandise</h1>
+    <div class="merch">
+        <div class="merch-box1">
+            <div class="merch-box11">
+               <h3 class="merch-inner-title1">T-Shirt</h3>
+               <img class="merch-img" src="merch-1.jpg">
+               <div class="merch-price">
+                  <h4>&#8377;400</h4>
+                  <a><button class="merch-buy">BUY</button></a>
+               </div>
+            </div>
+            <div class="merch-box12">
+              <h3 class="merch-inner-title1">Cup</h3>
+              <img class="merch-img" src="merch-2.jpg">
+              <div class="merch-price">
+                 <h4>&#8377;150</h4>
+                 <a><button class="merch-buy">BUY</button></a>
+              </div>
+           </div>
+           <div class="merch-box13">
+              <h3 class="merch-inner-title1">Hoodie</h3>
+              <img class="merch-img" src="merch-3.jpg">
+              <div class="merch-price">
+                 <h4>&#8377;1000</h4>
+                 <a><button class="merch-buy">BUY</button></a>
+              </div>
+           </div>
+           <div class="merch-box14">
+            <h3 class="merch-inner-title1">Locket</h3>
+            <img class="merch-img" src="merch-7.avif">
+            <div class="merch-price">
+               <h4>&#8377;200</h4>
+               <a><button class="merch-buy">BUY</button></a>
+            </div>
+         </div>
+          </div>
+        <div class="merch-box2">
+          <div class="merch-box21">
+             <h3 class="merch-inner-title1">Cushion</h3>
+             <img class="merch-img" src="merch-4.jpg">
+             <div class="merch-price">
+                <h4>&#8377;400</h4>
+                <a><button class="merch-buy">BUY</button></a>
+             </div>
+          </div>
+          <div class="merch-box22">
+            <h3 class="merch-inner-title1">Keychain</h3>
+            <img class="merch-img" src="merch-5.jpg">
+            <div class="merch-price">
+               <h4>&#8377;100</h4>
+               <a><button class="merch-buy">BUY</button></a>
+            </div>
+         </div>
+         <div class="merch-box23">
+            <h3 class="merch-inner-title1">T-Shirt</h3>
+            <img class="merch-img" src="merch-6.jpg">
+            <div class="merch-price">
+               <h4>&#8377;600</h4>
+               <a><button class="merch-buy">BUY</button></a>
+            </div>
+         </div>
+         <div class="merch-box24">
+            <h3 class="merch-inner-title1">Cap</h3>
+            <img class="merch-img" src="merch-8.jpg">
+            <div class="merch-price">
+               <h4>&#8377;100</h4>
+               <a><button class="merch-buy">BUY</button></a>
+            </div>
+         </div>
+        </div>  
+    </div> 
+    <div class="toys">
+        <h1>Buy For Your Pets</h1>
+        <div class="toy-box1">
+            <div class="toy-box11">
+               <h3 class="toy-inner-title1">Bones Toy</h3>
+               <img class="toy-img" src="toy-1.webp">
+               <div class="toy-price">
+                  <h4>&#8377;400</h4>
+                  <a><button class="toy-buy">BUY</button></a>
+               </div>
+            </div>
+            <div class="toy-box12">
+              <h3 class="toy-inner-title1">Cloth Dog</h3>
+              <img class="toy-img" src="toy-2.webp">
+              <div class="toy-price">
+                 <h4>&#8377;150</h4>
+                 <a><button class="toy-buy">BUY</button></a>
+              </div>
+           </div>
+           <div class="toy-box13">
+              <h3 class="toy-inner-title1">Cloth Cat</h3>
+              <img class="toy-img" src="toy-3.jpg">
+              <div class="toy-price">
+                 <h4>&#8377;1000</h4>
+                 <a><button class="toy-buy">BUY</button></a>
+              </div>
+           </div>
+           <div class="toy-box14">
+            <h3 class="toy-inner-title1">Fish Toy</h3>
+            <img class="toy-img" src="toy-4.avif">
+            <div class="toy-price">
+               <h4>&#8377;200</h4>
+               <a><button class="toy-buy">BUY</button></a>
+            </div>
+         </div>
+    </div>
+</section>
+<footer>
+    <div class="end">
+        <div class="footer">
+        <p class="endinfo">Contact-jeevan@gmail.com</p>
+        <div class="socialmed">
+            <ul class="endlist">
+            <div>
+            <button class="footerbtn"><li class="list3" id="insta"><img class="insta" src="insta.avif">instagram</li></button>
+            </div>
+            <div>
+            <button class="footerbtn"><li class="list3" id="facebook"><img class="facebook" src="facebook.jpg">facebook</li></button>
+           </div>
+           <div>
+            <button class="footerbtn"><li class="list3" id="twitter"><img class="twitter" src="twitter.jpg">twitter</li></button>
+           </div>
+            </ul>
+        </div>
+        <div>
+            <h5>All RIGHTS RESERVED</h5>
+        </div>
+    </div>
+    </div>
+   </footer>
+</body>
+<script src="script1.js"></script>
+</html>

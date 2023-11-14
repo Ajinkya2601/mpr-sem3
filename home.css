@@ -1,0 +1,465 @@
+:root{
+    font-size: 10px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: beige;
+    color: #357738;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background-color:  #357738;
+}
+::-webkit-scrollbar-thumb {
+    width: 3px; 
+    height: 20px; 
+    border-radius: 5rem;
+}
+::-webkit-scrollbar {
+    border: 1px solid #ccc; 
+}
+nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 11;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+    height: fit-content;
+}
+.left{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 10px;
+}
+.mid{
+    padding-top: 10px;  
+}
+.midname{
+    color: black;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   font-size: 2rem;
+   flex-wrap: wrap;
+}
+.list1{
+    margin: 0px 1rem;
+}
+.right{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+#logo{
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    mix-blend-mode: darken;
+}
+#name{
+    width: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn1,.btn2{
+    font-size: 2.2rem; 
+    padding: 10px; 
+    border-start-start-radius:25% ;
+    border-end-end-radius: 25%;
+    background: local;
+    margin-right: 40px;
+}   
+.menu{
+    display: none;
+}
+.fa-bars{
+    font-size: 3rem;
+    margin-right: 20px;
+    color: black;
+}
+.frontpage{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    background: url("dog.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#para1{ 
+    position: relative;
+    width: 20%;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-right: 15%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.44); 
+    padding: 3rem;
+}
+#register{
+    margin-top: 1.5rem;
+    color: #19cb19;
+    margin-left: 20%;
+    font-size: 2.5rem;
+    border: 0.3rem solid black;
+    font-weight: 600;
+    background-color: rgb(0,0,0,0.5);
+}
+.about{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    gap: 4rem;
+}
+#traindog{ 
+    width: 100%;
+    height: 50rem;
+    margin: 20px;
+}
+.aboutinfo{
+    font-size: 2.8rem;
+}
+h1{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.servicetop{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-cat,.fa-dog{
+    display: block;
+    margin: 0px auto;
+    font-size: 5rem;
+    border: 0.1rem solid wheat;
+    padding: 1.5rem;
+    border-radius: 50%;
+    color:   rgb(214, 209, 248);
+    background-color: black;
+}
+.service{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#slider1{
+  position: absolute;
+  font-size: 4.2rem;
+  left:2vw;
+  top: 52vh;
+  z-index: 10;
+  border-radius: 50%;
+  color: black;
+  background-color: rgb(248, 212, 212,0.4);
+   padding: 5px 12px;
+   cursor: pointer;
+}
+#slider2{
+    position: absolute;
+    font-size: 4.2rem;
+    right:2vw;
+    top: 52vh;
+    z-index: 10;
+    border-radius: 50%;
+    color: black;
+    background-color: rgb(248, 212, 212,0.4);
+     padding: 5px 12px;
+     cursor: pointer;
+}
+h4{
+    font-size: 3rem;
+}
+.btn3{
+    font-size: 2.5rem;
+    background: local;
+    padding: 1.5rem;
+    border-radius: 25%;
+    font: bold; 
+}
+.reportbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left1,.right1{
+    padding: 3rem 10rem;
+    background-color: rgb(221, 218, 240);
+    border: 0.2rem solid black;
+    border-radius: 20%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0.8rem 0.8rem 0.5rem rgb(0, 20, 33);
+}
+.info1{
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+}   
+#doghand{
+    width: 100%;
+    height: 40rem;
+}
+.right2,.left2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin:2rem;
+    font-size: 2.4rem;
+}
+h3{
+   text-align: center;
+   font-size: 3.5rem;
+   margin-bottom: -10px;
+}
+.adoptbtn,.volunteerbtn{
+    background:local;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+#adoptinfo{
+    margin-bottom: 5rem;
+}
+.info2{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+}
+.supportinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+#dogshirt{
+    width: 36rem;
+    height: max-content;
+    margin-bottom: 2rem;
+}
+#catplay2{
+    width: 36rem;
+    height: max-content;
+    margin-bottom: 2rem;
+}
+#supportus{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.left3,.right3{
+    display: flex;
+    flex-direction: column; 
+    border: 0.2rem solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2rem;
+    border-radius: 10%;
+    background-color: azure;
+    margin-bottom: 2rem;
+    box-shadow: 0.9rem 0.9rem 0.9rem rgb(1, 27, 43);
+}
+#buybtn,#donatebtn{
+  width: fit-content;
+  font-size: 2.5rem;
+  background: local;
+  border-radius: 4rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+}
+h4{
+    text-align: center;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(242, 239, 173);
+    color: rgb(1, 5, 8);
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom:1px solid black; ;
+}
+.insta,.facebook,.twitter{
+    width: 4rem;
+    height:4rem;
+    padding-right: 1rem;
+    mix-blend-mode: darken;
+}
+.twitter{
+    width: 5rem;
+}
+.socialmed{
+    list-style:none;
+}
+.endlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: -10px;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+.endinfo{
+    font-size: 3rem;
+    color:rgb(1, 1, 24);
+}
+.footerbtn{
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    background: local;
+    color: rgb(1, 1, 24);
+    margin-bottom: 0.5rem;
+}
+h5{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+.blue{
+    color: rgb(1, 79, 1);
+}
+a,button{
+    cursor: pointer;
+    color: rgb(12, 3, 27);
+    text-decoration: none; 
+}
+button{
+    border: 0.21rem solid black;
+}
+
+@media (max-width:991px) {
+    :root{
+        font-size: 8px;
+    }   
+    .navbar{
+    grid-template-columns: 1fr 6fr 0.5fr;
+    gap:1rem;
+    }
+}
+
+@media (max-width:768px) {
+    :root{
+    font-size: 6px;
+    }
+    .navbar{
+        height:fit-content ;
+    }
+    .midname{
+        display: none;
+    }
+    .btn1{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-top: 27px;
+    }
+    .right{
+        align-items: flex-start;
+    }
+    .frontpage{
+        background-position: left;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.6fr 0.8fr; 
+        gap:0px;
+    }
+    #traindog,#doghand{
+        width: calc(100% - 30px);
+        margin: 10px 0px 0px 0px;
+       
+    }
+    .aboutpic{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutinfo{
+        padding: 0px 15px;
+    }
+    .service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left1{
+        margin-bottom: 16px;
+    }
+    .info1{
+        display: flex;
+        flex-flow: column;
+    }
+    .right2,.left2{
+        margin: 10px 0px 0px 0px;
+    }
+    h3{
+        margin-bottom: 0px;
+    }
+    .info2{
+        display: flex;
+        flex-flow: column-reverse; 
+    }
+    .supportinfo{
+        flex-flow: column;
+    }
+    .left3{
+        margin-bottom: 16px;
+    }
+    #adoptinfo{
+        padding: 0px 15px;
+         margin-bottom: 4rem ;
+    }
+    #para1{
+        margin-right: 30%;
+        width: min-content;
+        background-color: rgba(0, 0, 0, 0.3); 
+        padding: 10px;  
+    }
+    #register{
+        background-color: rgb(0,0,0,0.5);
+    }
+    #logo{
+        width: 80px;
+        height: 80px;
+    }
+    #name{
+        font-size: 22px;
+    }
+    .endlist{
+        gap:4px;
+    }
+}

@@ -1,0 +1,232 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Adoption Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        :root{
+    font-size: 10px;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: beige;
+    color: #357738;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background-color:  #357738;
+}
+::-webkit-scrollbar-thumb {
+    width: 3px; 
+    height: 20px; 
+    border-radius: 5rem;
+}
+::-webkit-scrollbar {
+    border: 1px solid #ccc; 
+}
+nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+    height: fit-content;
+}
+.left{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 10px;
+}
+.mid{
+    padding-top: 10px;  
+}
+.midname{
+   color: black;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   font-size: 2rem;
+   flex-wrap: wrap;
+}
+.list1{
+    margin: 20px 1rem;
+}
+.right{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+#logo{
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    mix-blend-mode: darken;
+}
+#name1{
+    margin-top: 20px;
+    width: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn1{
+    font-size: 2.2rem; 
+    padding: 10px; 
+    border-start-start-radius:25% ;
+    border-end-end-radius: 25%;
+    background: local;
+    margin-right: 40px;
+} 
+a,button{
+    cursor: pointer;
+    color: rgb(12, 3, 27);
+    text-decoration: none; 
+} 
+h1{
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 34, 108);
+}  
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            background-color: #f4f4f4;
+            padding:20px 80px 20px 50px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 15px 80px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 6vw;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="left">
+                 <img id="logo" src="jeevan.jpg">
+                 <h2 id="name1">JEEVAN</h2>
+            </div>
+            <div class="mid">
+            <ul class="midname">
+                <a class="list1" href="home.html">Home</a>          
+                <a class="list1" href="adopt.html">Adopt</a>
+                <a class="list1" href="rescue.html">Rescue</a>
+                <a class="list1" href="volunteer.html">Volunteer</a>
+                <a class="list1" href="map.html">NGOs & Shelter</a>
+                <a class="list1" href="support.html">Support us</a> 
+            </ul>
+            </div>
+            <div class="right">
+                <a href="loginpage.html"><button class="btn1">Login</button></a>
+                <div class="menu">
+                    <a href="#"><i id="ham" class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav> 
+    <div class="container">
+        <h1>Adopt an Animal</h1>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required placeholder="Your Email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+
+            <label for="animal">Select an Animal:</label>
+            <select id="animal" name="animal" required>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" rows="4" cols="4" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <div class="end">
+            <div class="footer">
+            <p class="endinfo">Contact-jeevan@gmail.com</p>
+            <div class="socialmed">
+                <ul class="endlist">
+                <div>
+                <button class="footerbtn"><li class="list3" id="insta"><img class="insta" src="insta.avif">instagram</li></button>
+                </div>
+                <div>
+                <button class="footerbtn"><li class="list3" id="facebook"><img class="facebook" src="facebook.jpg">facebook</li></button>
+               </div>
+               <div>
+                <button class="footerbtn"><li class="list3" id="twitter"><img class="twitter" src="twitter.jpg">twitter</li></button>
+               </div>
+                </ul>
+            </div>
+            <div>
+                <h5>All RIGHTS RESERVED</h5>
+            </div>
+        </div>
+        </div>
+
+       </footer>
+</body>
+</html>
